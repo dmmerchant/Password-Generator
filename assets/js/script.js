@@ -66,7 +66,7 @@ function promptLength(){
       return;
     };
     //Checks to see if the response is a number
-    if (isNaN(Number(passwordLength)) || !Number.isInteger(passwordLength) || passwordLength == "") {
+    if (isNaN(Number(passwordLength)) || !Number.isInteger(Number(passwordLength)) || passwordLength == "") {
       alert("Please enter a valid integer.");
       return promptLength();
     };
